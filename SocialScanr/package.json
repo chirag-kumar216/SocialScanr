@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "react-icons": "^4.11.0",
+    "react-slick": "^0.29.0",
+    "react-typist": "^2.0.5",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^6.1.0"
+  }
+}

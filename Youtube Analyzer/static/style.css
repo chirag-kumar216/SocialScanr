@@ -1,0 +1,212 @@
+body{
+    /*background-repeat:no-repeat;*/
+    text-align: center;
+    background-size: 100%;
+    margin:0;
+
+}
+
+/*letter style*/
+h{
+    color: white;
+
+    font: "Script MT Bold";
+    margin: 20px;
+    font-size: 1.8rem;
+  text-align: justify;
+}
+h1{
+    background-color:#FF3131;
+    color: white;
+    font: "Script MT Bold";
+    padding: 20px;
+    font-size: 3em;
+    margin:0;
+}
+h3{
+    color: palevioletred;
+    font-size: 1.3em;
+}
+
+.greater-than {
+  position: relative;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 15rem;
+}
+
+.greater-than::before,
+.greater-than::after,
+.greater-than .middle-triangle,
+.greater-than .additional-triangle {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 0;
+  border: 280px solid transparent; /* Adjust size as needed */
+}
+
+/* First triangle (red) */
+.greater-than::before {
+  left: 120px; /* Adjust spacing between triangles */
+  border-left: 420px solid red; /* Adjust size and color as needed */
+  padding-left: 8rem; /* Adjust spacing */
+}
+
+/* Second triangle (blue) */
+.greater-than::after {
+  left: 0px; /* Adjust spacing between triangles */
+  border-left: 420px solid white; /* Adjust size and color as needed */
+  padding-left: 8rem; /* Adjust spacing */
+}
+
+
+.res_mes{
+    text-align: left;
+    color: slategrey;
+    font-size: 1.2em;
+}
+.pos_head{
+    color: white;
+    font-size: 1.4em;
+    margin: 10px;
+}
+.neg_head{
+    color: white;
+    font-size: 1.4em;
+    margin: 10px;
+}
+
+/*input style*/
+input{
+    color: black;
+    background-color: #E3E2DF;
+    width: 340px;
+    height: 25px;
+    margin: 3%;
+    border: solid 0 darkslategray;
+    border-radius: 8px;
+    font: Georgia;
+    font-size: 1em;
+}
+input:focus{
+    border: solid 0 darkslategray;
+    outline: none;
+    background-color: darkgray;
+}
+input:hover{
+    background-color: darkgray;
+}
+
+/*table style*/
+table{
+    text-align: left;
+    border-spacing: 0px;
+    margin: 2rem;
+    background-color: white;
+}
+tr{
+    color: black;
+    text-align: left;
+    padding: 10px;
+}
+tr:nth-child(even){
+    background-color: #C0C0C0;
+}
+tr:hover{
+    background-color: #708090;
+}
+
+/*scrap button style*/
+#scrap_button{
+    background-color: #FF3131;
+    color: lightyellow;
+    width: 400px;
+    height:4rem;
+    border: none;
+    font-size: 2rem;
+    margin-top: 20rem;
+    border-radius:4rem;
+
+
+}
+#scrap_button:hover{
+    background-color: #E85A4F;
+    color: white;
+    cursor: pointer;
+}
+#scrap_button:focus{
+    border: none;
+}
+
+/*loading style*/
+#loading{
+  margin: 60px;
+  display: none;
+  position: relative;
+
+}
+
+.input_link {
+  padding: 12px; /* Adjust the value to increase or decrease the padding */
+  margin-top: 6rem;
+  border-radius: 3rem;
+}
+
+
+#loading span {
+  margin-top:8rem;
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  color: darkslategray;
+  /*text-transform: uppercase;*/
+  animation: flip 5s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg)
+  }
+}
+
+/* img{
+    size: 100px 100px;
+} */
+
+
+.main_section{
+ padding: 2rem 12rem;
+ display:flex;
+ margin-bottom: 8rem;
+}
+
+.section_h{
+  padding: 0 3rem;
+}
+
+.main_card{
+   height: 430px;
+    width: 37%;
+    background-color:#FF3131;
+    border-radius:3rem;
+    padding-top:3rem;
+}
+
+.comments h3{
+background-color:red;
+padding:2rem;
+
+}
+
+.heading_section{
+margin-top: 5rem;
+
+}
+
+.heading_section h3{
+color:white;
+background-color:black;
+}

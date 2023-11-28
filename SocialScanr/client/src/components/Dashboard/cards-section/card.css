@@ -1,0 +1,109 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .carousel {
+    position: relative;
+    width: 23rem;
+    height: 23rem;
+    perspective: 500px;
+    transform-style: preserve-3d;
+  }
+  
+  .card-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: 
+      rotateY(calc(var(--offset) * 50deg)) 
+      scaleY(calc(1 + var(--abs-offset) * -0.4))
+      translateZ(calc(var(--abs-offset) * -30rem))
+      translateX(calc(var(--direction) * -5rem));
+    filter: blur(calc(var(--abs-offset) * 1rem));
+    transition: all 0.3s ease-out;
+  }
+  
+  .card {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    background-color: hsl(0deg, 0%, calc(10% + var(--abs-offset) * 25%));
+    border-radius: 1rem;
+    color: #ffffff;
+    text-align: justify;
+    transition: all 0.3s ease-out;
+    
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      margin: 0 0 0.7em;
+      color: #ffffff;
+    }
+    
+    p, h2 {
+      transition: all 0.3s ease-out;
+      opacity: var(--active);
+    }
+  }
+  
+  .nav {
+    color: white;
+    font-size: 5rem;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    z-index: 2;
+    cursor: pointer;
+    user-select: none;
+    background: unset;
+    border: unset;
+    
+    &.left {
+      transform: translateX(-100%) translatey(-50%);
+    }
+    
+    &.right {
+      right: 0;
+      transform: translateX(100%) translatey(-50%);
+    }
+  }
+
+
+  
+  .user-avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fits the circular frame */
+  }
+
+  
+  .user-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-image {
+    width: 80px; /* Set the desired width for the circular frame */
+    height: 80px; /* Set the same height as the width for a circular frame */
+    border-radius: 50%; /* Makes the frame circular */
+    overflow: hidden; /* Clips the image to the circular frame */
+    margin-right: 10px; /* Add spacing between user image and user details */
+  }
+  
+  
+  .user-details {
+    flex: 1; /* Expands to fill available space */
+  }
+
+  .user-details h2{
+    margin: -2px;
+  }
+
+  .user-details p{
+    margin-top: -2px;
+  }
+  
