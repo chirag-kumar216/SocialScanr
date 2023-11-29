@@ -3,17 +3,15 @@ body{
     text-align: center;
     background-size: 100%;
     margin:0;
-
+    overflow-x:hidden;
 }
-
 /*letter style*/
 h{
     color: white;
-
     font: "Script MT Bold";
     margin: 20px;
     font-size: 1.8rem;
-  text-align: justify;
+    text-align: justify;
 }
 h1{
     background-color:#FF3131;
@@ -127,7 +125,7 @@ tr:hover{
     height:4rem;
     border: none;
     font-size: 2rem;
-    margin-top: 20rem;
+    margin-top: 4rem;
     border-radius:4rem;
 
 
@@ -151,8 +149,9 @@ tr:hover{
 
 .input_link {
   padding: 12px; /* Adjust the value to increase or decrease the padding */
-  margin-top: 6rem;
+  margin-top: 10rem;
   border-radius: 3rem;
+  height: 50px;
 }
 
 
@@ -188,11 +187,12 @@ tr:hover{
 }
 
 .main_card{
-   height: 430px;
+   height: 370px;
     width: 37%;
     background-color:#FF3131;
     border-radius:3rem;
-    padding-top:3rem;
+    padding-top:2rem;
+    padding-bottom:1rem;
 }
 
 .comments h3{
